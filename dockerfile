@@ -14,8 +14,7 @@ RUN useradd -G sudo -m -d /home/idassvv -s /bin/bash -p "$(openssl passwd -1 123
 WORKDIR /home/idassvv
 RUN mkdir hacking \
 && cd hacking \
-&& curl -SL
-https://raw.githubusercontent.com/uia-worker/is105misc/master/sem01v24/pawned.sh > pawned.sh \
+&& curl -SL https://raw.githubusercontent.com/uia-worker/is105misc/master/sem01v24/pawned.sh > pawned.sh \
 && chmod 764 pawned.sh \
 && cd ..
 RUN git config --global user.email "ida.svendby@online.no" \

@@ -23,7 +23,7 @@ RUN git config --global user.email "ida.svendby@online.no" \
 && git config --global url."https://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:@github.com/".insteadOf "https://github.com" \
 && mkdir -p github.com/idassvv
 USER root
-RUN curl -SL https://go.dev/dl/go1.21.7.OS-ARCH.tar.gz \
+RUN curl -SL https://go.dev/dl/go1.21.7.linux- x86_64.tar.gz \
 | tar xvz -C /usr/local
 USER idassvv
 SHELL ["/bin/bash", "-c"]

@@ -10,7 +10,7 @@ wget \
 curl \
 git
 RUN useradd -G sudo -m -d /home/idassvv -s /bin/bash -p "$(openssl passwd -1 1234)" idassvv
-idassvv
+ USER idassvv
 WORKDIR /home/idassvv
 RUN mkdir hacking \
 && cd hacking \
